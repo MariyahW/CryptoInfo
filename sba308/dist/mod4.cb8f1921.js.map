@@ -1,0 +1,1 @@
+{"version":3,"sources":["mod4.js"],"names":["history","event","target"],"mappings":"AAAA,SAASA,OAAOA,CAACC,KAAK,EAAC;EACnBA,KAAK,CAACC,MAAM;AAChB","file":"mod4.cb8f1921.js","sourceRoot":"..","sourcesContent":["function history(event){\r\n    event.target\r\n}"]}

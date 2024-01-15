@@ -908,7 +908,7 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 // eslint-disable-next-line strict
 var _default = exports.default = null;
-},{}],"../../../node_modules/base64-js/index.js":[function(require,module,exports) {
+},{}],"../../../../node_modules/base64-js/index.js":[function(require,module,exports) {
 'use strict'
 
 exports.byteLength = byteLength
@@ -1060,7 +1060,7 @@ function fromByteArray (uint8) {
   return parts.join('')
 }
 
-},{}],"../../../node_modules/ieee754/index.js":[function(require,module,exports) {
+},{}],"../../../../node_modules/ieee754/index.js":[function(require,module,exports) {
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
@@ -1147,14 +1147,14 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"../../../node_modules/isarray/index.js":[function(require,module,exports) {
+},{}],"../../../../node_modules/isarray/index.js":[function(require,module,exports) {
 var toString = {}.toString;
 
 module.exports = Array.isArray || function (arr) {
   return toString.call(arr) == '[object Array]';
 };
 
-},{}],"../../../node_modules/buffer/index.js":[function(require,module,exports) {
+},{}],"../../../../node_modules/buffer/index.js":[function(require,module,exports) {
 
 var global = arguments[3];
 /*!
@@ -2947,7 +2947,7 @@ function isnan (val) {
   return val !== val // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":"../../../node_modules/base64-js/index.js","ieee754":"../../../node_modules/ieee754/index.js","isarray":"../../../node_modules/isarray/index.js","buffer":"../../../node_modules/buffer/index.js"}],"node_modules/axios/lib/helpers/toFormData.js":[function(require,module,exports) {
+},{"base64-js":"../../../../node_modules/base64-js/index.js","ieee754":"../../../../node_modules/ieee754/index.js","isarray":"../../../../node_modules/isarray/index.js","buffer":"../../../../node_modules/buffer/index.js"}],"node_modules/axios/lib/helpers/toFormData.js":[function(require,module,exports) {
 var Buffer = require("buffer").Buffer;
 'use strict';
 
@@ -3141,7 +3141,7 @@ function toFormData(obj, formData, options) {
   return formData;
 }
 var _default = exports.default = toFormData;
-},{"../utils.js":"node_modules/axios/lib/utils.js","../core/AxiosError.js":"node_modules/axios/lib/core/AxiosError.js","../platform/node/classes/FormData.js":"node_modules/axios/lib/helpers/null.js","buffer":"../../../node_modules/buffer/index.js"}],"node_modules/axios/lib/helpers/AxiosURLSearchParams.js":[function(require,module,exports) {
+},{"../utils.js":"node_modules/axios/lib/utils.js","../core/AxiosError.js":"node_modules/axios/lib/core/AxiosError.js","../platform/node/classes/FormData.js":"node_modules/axios/lib/helpers/null.js","buffer":"../../../../node_modules/buffer/index.js"}],"node_modules/axios/lib/helpers/AxiosURLSearchParams.js":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -5415,15 +5415,13 @@ exports.isCancel = isCancel;
 exports.CanceledError = CanceledError;
 exports.AxiosError = AxiosError;
 exports.Axios = Axios;
-},{"./lib/axios.js":"node_modules/axios/lib/axios.js"}],"mod1.js":[function(require,module,exports) {
+},{"./lib/axios.js":"node_modules/axios/lib/axios.js"}],"select.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = createOpt;
-var _axios = _interopRequireDefault(require("axios"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 var api_key = '` 83afe97e-5f1a-495c-931d-45918a68d87c';
 function createOpt(coin) {
   var opt = document.createElement('option');
@@ -5432,7 +5430,7 @@ function createOpt(coin) {
   // form.appendChild(opt);
   return opt;
 }
-},{"axios":"node_modules/axios/index.js"}],"node_modules/@kurkle/color/dist/color.esm.js":[function(require,module,exports) {
+},{}],"node_modules/@kurkle/color/dist/color.esm.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21046,7 +21044,7 @@ Object.keys(_chart).forEach(function (key) {
 });
 _chart.Chart.register(..._chart.registerables);
 var _default = exports.default = _chart.Chart;
-},{"../dist/chart.js":"node_modules/chart.js/dist/chart.js"}],"mod2.js":[function(require,module,exports) {
+},{"../dist/chart.js":"node_modules/chart.js/dist/chart.js"}],"chart.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21093,7 +21091,7 @@ function clearChart() {
     myChart.destroy();
   }
 }
-},{"chart.js/auto":"node_modules/chart.js/auto/auto.js"}],"mod3.js":[function(require,module,exports) {
+},{"chart.js/auto":"node_modules/chart.js/auto/auto.js"}],"data.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -21109,7 +21107,6 @@ function getPrice(response) {
   var data = response.data.data;
   var tag1 = document.createElement('h4');
   tag1.innerHTML = "The current price of ".concat(data.name, ": ").concat(data.priceUsd);
-  console.log(data);
   return tag1;
 }
 function getChange(response) {
@@ -21127,13 +21124,34 @@ function getSymbol(response) {
 function clearDiv(section) {
   section.innerHTML = '';
 }
-},{}],"script.js":[function(require,module,exports) {
+},{}],"history.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = history;
+var _axios = _interopRequireDefault(require("axios"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function history(event, his) {
+  event.preventDefault();
+  var hist = his;
+  var coin = event.target.value;
+  _axios.default.get("https://api.coincap.io/v2/assets/".concat(coin)).then(function (res) {
+    var data = res.data.data;
+    console.log(data);
+    hist.push(data.symbol);
+  });
+  return hist;
+}
+},{"axios":"node_modules/axios/index.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _axios = _interopRequireDefault(require("axios"));
-var _mod = _interopRequireDefault(require("./mod1.js"));
-var charting = _interopRequireWildcard(require("./mod2.js"));
-var pricing = _interopRequireWildcard(require("./mod3.js"));
+var _select = _interopRequireDefault(require("./select.js"));
+var charting = _interopRequireWildcard(require("./chart.js"));
+var pricing = _interopRequireWildcard(require("./data.js"));
+var _history = _interopRequireDefault(require("./history.js"));
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -21145,6 +21163,8 @@ var form = document.querySelector("select");
 var search = document.querySelector('#formButton');
 var item4 = document.getElementById('item4');
 var sect2 = document.getElementById('list-item-2');
+var historySection = document.querySelector('#list-item-4');
+var his = [];
 var api_key = "83afe97e-5f1a-495c-931d-45918a68d87c";
 (function () {
   var _fillForm = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
@@ -21153,7 +21173,7 @@ var api_key = "83afe97e-5f1a-495c-931d-45918a68d87c";
         case 0:
           _axios.default.get("https://api.coincap.io/v2/assets").then(function (response) {
             response.data.data.forEach(function (coin) {
-              form.append((0, _mod.default)(coin));
+              form.append((0, _select.default)(coin));
             });
           });
         case 1:
@@ -21169,10 +21189,9 @@ var api_key = "83afe97e-5f1a-495c-931d-45918a68d87c";
 })()();
 form.addEventListener('change', fillLine);
 form.addEventListener('change', priceUsd);
+form.addEventListener('change', fillHistory);
 function fillLine(event) {
   event.preventDefault();
-  // item4.classList='active';
-  // console.log(item4.classList);
   var coin = event.target.value;
   _axios.default.get("https://api.coincap.io/v2/assets/".concat(coin, "/history?interval=d1")).then(function (res) {
     charting.clearChart();
@@ -21188,7 +21207,16 @@ function priceUsd(event) {
     sect2.append(pricing.getSymbol(response));
   });
 }
-},{"axios":"node_modules/axios/index.js","./mod1.js":"mod1.js","./mod2.js":"mod2.js","./mod3.js":"mod3.js"}],"../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+function fillHistory(event) {
+  his = (0, _history.default)(event, his);
+  historySection.innerHTML = '';
+  var str = "You have visited: ";
+  historySection.append(str);
+  his.forEach(function (coin) {
+    historySection.append("".concat(coin, " "));
+  });
+}
+},{"axios":"node_modules/axios/index.js","./select.js":"select.js","./chart.js":"chart.js","./data.js":"data.js","./history.js":"history.js"}],"../../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -21213,7 +21241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51248" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57161" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
@@ -21357,5 +21385,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
+},{}]},{},["../../../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","script.js"], null)
 //# sourceMappingURL=/script.75da7f30.js.map
