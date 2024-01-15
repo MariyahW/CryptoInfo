@@ -1,0 +1,63 @@
+/* Coolors scheme
+Battleship Grey #989788
+English Violet #51344D
+Eggplant #6F5060
+Cinereous (pinkish) #A78682
+Laps Lazuli(blue) #05668D */
+
+body, html {
+    width: 100%;
+    height: 100%
+  
+}
+
+main-body {
+background-color: white;
+width: 100%;
+ height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: left;
+ 
+
+}
+header-item{
+color: #05668D;
+height: 10%;
+width: 100%;
+text-align: center;
+}
+
+form {
+    width: 80%;
+}
+.row {
+    width: 100%;
+    height: 90%;
+}
+/* #list-example {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+} */
+
+#list-example{
+    width: 20%;
+}
+/* #price {
+    color: rgb(152, 151, 136)
+} */
+
+/* #item4{
+display: none;
+} */
+
+.active {
+display: block;
+}
+#list-item-2{
+    color: #989788;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
